@@ -81,62 +81,6 @@ const logout = () => {
           </VListItem>
 
           <VDivider class="my-2" />
-
-          <!-- 👉 Profile -->
-          <VListItem :to="{ name: 'apps-user-view-id', params: { id: 21 } }">
-            <template #prepend>
-              <VIcon
-                class="me-2"
-                icon="tabler-user"
-                size="22"
-              />
-            </template>
-
-            <VListItemTitle>Profile</VListItemTitle>
-          </VListItem>
-
-          <!-- 👉 Settings -->
-          <VListItem :to="{ name: 'pages-account-settings-tab', params: { tab: 'account' } }">
-            <template #prepend>
-              <VIcon
-                class="me-2"
-                icon="tabler-settings"
-                size="22"
-              />
-            </template>
-
-            <VListItemTitle>Settings</VListItemTitle>
-          </VListItem>
-
-          <!-- 👉 Pricing -->
-          <VListItem :to="{ name: 'pages-pricing' }">
-            <template #prepend>
-              <VIcon
-                class="me-2"
-                icon="tabler-currency-dollar"
-                size="22"
-              />
-            </template>
-
-            <VListItemTitle>Pricing</VListItemTitle>
-          </VListItem>
-
-          <!-- 👉 FAQ -->
-          <VListItem :to="{ name: 'pages-faq' }">
-            <template #prepend>
-              <VIcon
-                class="me-2"
-                icon="tabler-help"
-                size="22"
-              />
-            </template>
-
-            <VListItemTitle>FAQ</VListItemTitle>
-          </VListItem>
-
-          <!-- Divider -->
-          <VDivider class="my-2" />
-
           <!-- 👉 Logout -->
           <VListItem
             link
@@ -150,7 +94,7 @@ const logout = () => {
               />
             </template>
 
-            <VListItemTitle>Logout</VListItemTitle>
+            <VListItemTitle>Déconnexion</VListItemTitle>
           </VListItem>
         </VList>
       </VMenu>
